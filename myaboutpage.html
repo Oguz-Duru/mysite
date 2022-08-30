@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ea11566b64.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./about.css">
+    <link rel="icon" type="image/x-icon" href="./oguz1.webp">
+    <title>Oğuz Can Duru</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body {
+        background: linear-gradient(to bottom, rgb(17, 55, 55), rgb(17, 55, 55));
+        width: 100%;
+        height: 100%;
+    }
+
+    html {
+        width: 100%;
+        height: 100%;
+    }
+
+    .root {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .root:before {
+        content: " ";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-image: url("/karınca.gif");
+        opacity: 0.25;
+        z-index: -1;
+    }
+
+    .video {
+        width: 100%;
+        height: 430px;
+
+    }
+
+    .video img {
+        width: 100%;
+        height: 430px;
+    }
+
+    nav {
+        width: 100%;
+        
+        height: 100px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    .title {
+
+        width: 100%;
+        margin: auto;
+        margin-top: 50px;
+        height: 200px;
+    }
+
+    i {
+        color: dimgray;
+        font-size: 30px;
+        margin: 5px;
+    }
+
+    h1 {
+        width: 150px;
+        margin: auto;
+        color: white;
+        font-size: 30px;
+    }
+
+    .paragraph {
+        width: 500px;
+        color: white;
+        margin: auto;
+    }
+
+    .icons {
+        color: #a9a9a9;
+    }
+
+    i {
+        color: #a9a9a9;
+    }
+
+    i:hover {
+        transform: scale(1.1);
+        transition: 0.50s;
+        color: white;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+
+    @media (max-width:768px) {
+        nav {
+            width: 100%;
+            display: block;
+        }
+
+        h1 {
+            width: 250px;
+            margin: auto;
+        }
+
+        .icons {
+            margin-left: 25px;
+        }
+    }
+
+    @media (max-width:500px) {
+        nav {
+            width: 100%;
+            display: block;
+            justify-content: flex-start;
+        }
+
+        .video {
+            height: 370px;
+        }
+
+        .video img {
+            height: 370px;
+        }
+
+        .paragraph {
+            width: 250px;
+            height: 150px;
+        }
+
+        h1 {
+            font-size: 35px;
+            width: 250px;
+            margin: auto;
+        }
+
+        .icons {
+            margin-left: 10px;
+        }
+
+        i {
+            margin-left: 5px;
+            font-size: 25px;
+        }
+    }
+</style>
+
+<body>
+    <div class="root">
+        <div class="video">
+            <img src="./Naruko Uzumaki.gif" alt="" width="100%">
+        </div>
+
+        <nav>
+
+            <div class="title">
+                <h1>About</h1>
+                <br>
+                <p class="paragraph">Hello I'm Oğuz and 19 years old. I live in Turkey. My interest in programming has
+                    turned into site designs and I have been dealing with site designs for about 3 years.</p>
+            </div>
+            <center>
+                <div class="icons">
+                    <a href="https://github.com/Eraxus1" target="blank">
+                        <i class="fa fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/oğuz-can-duru-92b289246/" target="blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/oguzcanduru" target="blank">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    <a href="mailto:duruoguz8@gmail.com" target="blank">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </center>
+        </nav>
+    
+    </div>
+</body>
+
+</html>

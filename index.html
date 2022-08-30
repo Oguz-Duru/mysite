@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ea11566b64.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="/oguz1.webp">
+    <title>Oğuz Can Duru</title>
+</head>
+<style>
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: rgb(17, 55, 55);
+    width: 100%;
+    height: 100%;
+
+}
+.root{ 
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.root:before {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url("/karınca.gif");
+    opacity: 0.25;
+}
+.video {
+    width: 100%;
+    height: 430px;
+}
+
+.video img {
+    width: 100%;
+    height: 430px;
+}
+
+nav {
+    background-color: rgb(17, 55, 55);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.title {
+    width: 250px;
+}
+
+i {
+    color: #a9a9a9;
+    font-size: 30px;
+    margin: 5px;
+}
+
+h1 {
+    margin: 10px;
+    margin-left: 35px;
+    color: white;
+    font-size: 30px;
+}
+a{
+    text-decoration: none;
+}
+p {
+    margin-left: 50px;
+    color: white;
+}
+button{ 
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+    padding: 1rem;
+    margin: auto;
+    display: block;
+    background-color: rgb(17, 55, 55);
+    color: white;
+    border:1px solid #a9a9a9;
+    margin-top: 100px;
+    border-radius:10px;
+    width: 150px;
+    opacity: 0.7;
+    z-index: 1;
+}
+button:hover{
+    transition: 0.50s;
+    width: 250px;
+    border: 1px solid white;
+    background:rgba(17, 55, 55, 0.326);
+}
+
+.icons{ 
+    margin-left: 40%;
+    background: none;
+    z-index: 1;
+}
+i:hover{
+    transform: scale(1.1);
+    transition: 0.50s;
+    color: white;
+}
+
+@media (max-width:768px) {
+    nav {
+        width: 100%;
+        display: block;
+    }
+
+    h1 {
+        margin-left: 50px;
+    }
+
+    .icons {
+        margin-left: 25px;
+    }
+}
+
+@media (max-width:500px) {
+    nav {
+        width: 100%;
+        display: block;
+        justify-content: flex-start;
+    }
+    .video{
+        height:  370px;
+    }
+    .video img{
+        height: 370px;
+    }
+    p {
+        margin-left: 20px;
+    }
+
+    h1 {
+        margin-left: 10px;
+
+    }
+
+    .icons {
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+
+    i {
+        margin-left: 5px;
+        font-size: 25px;
+    }
+}
+</style>
+
+<body>
+    <div class="root">
+        <div class="video">
+            <img src="./Naruko Uzumaki.gif" alt="" width="100%">
+        </div>
+        <nav>
+            <div class="title">
+                <h1>Oğuz Can</h1>
+                <p>Web Developer</p>
+            </div>
+            <div class="icons">
+                <a href="https://github.com/Eraxus1" target="blank">
+                    <i class="fa fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/oğuz-can-duru-92b289246/" target="blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/oguzcanduru" target="blank">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a href="mailto:duruoguz8@gmail.com" target="blank">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+        </nav>
+
+        <button><a style="text-decoration:none; color:white" href="myaboutpage.html">INFORMATION</a></button>
+    </div>
+</body>
+
+</html>
