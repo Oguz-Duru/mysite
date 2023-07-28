@@ -177,7 +177,7 @@
             <div class="title">
                 <h1>About</h1>
                 <br>
-                <p class="paragraph">Hello I'm Oğuz and 21 years old. I live in Turkey. My interest in programming has
+                <p class="paragraph">Hello I'm Oğuz and I'm <span id="age"></span> years old. I live in Turkey. My interest in programming has
                     turned into site designs and I have been dealing with site designs for about 3 years.</p>
             </div>
             <center>
@@ -199,6 +199,29 @@
         </nav>
     
     </div>
+
+    <script>
+        let birthYear = 2003;
+
+        function calculateAge() {
+            const today = new Date();
+            const currentYear = today.getFullYear();
+
+            let age = currentYear - birthYear;
+
+            return age;
+        }
+
+        function updateAge() {
+            const ageElement = document.getElementById('age');
+            const age = calculateAge();
+            ageElement.textContent = age;
+        }
+
+        updateAge();
+
+        setInterval(updateAge, 1000 * 60 * 60 * 24 * 365);
+    </script>
 </body>
 
 </html>
